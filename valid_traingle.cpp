@@ -2,19 +2,17 @@
 using namespace std;
 int main()
 {
-    int test;
-    cin >> test;
+
     int a, b, c;
-    while (test--)
+
+    cin >> a >> b >> c;
+
+    if ((a + b + c == 180) && (a > 0 && b > 0 && c > 0))
     {
-        cin >> a >> b >> c;
-        if (a + b + c == 180)
-        {
-            cout << "YES" << endl;
-        }
-        else
-        {
-            cout << "NO" << endl;
-        }
+        cout << "YES" << endl;
+    }
+    else
+    {
+        cout << "NO" << endl;
     }
 }
